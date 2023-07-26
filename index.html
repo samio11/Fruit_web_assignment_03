@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Fruit Burst</title>
     <!-- USing Tailwind and DaisyUi -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
@@ -165,7 +168,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-4/5 mx-auto h-auto bg-white hidden lg:flex justify-evenly items-center p-4 absolute"
+            <div class="w-4/5 mx-auto h-auto bg-white rounded-lg hidden lg:flex justify-evenly items-center p-4 absolute"
                 style="top: 420px; left: 120px;">
                 <div class="text-center">
                     <img src="./images/fruit1.png" alt="" class="">
@@ -231,12 +234,12 @@
             <div class="w-full mt-40 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
                 <!-- Card_01 -->
                 <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="/./images/fruit6.png" alt="Shoes" /></figure>
+                    <figure><img src="/./images/fruit6.png" alt="Shoes1" /></figure>
                     <div class="card-body">
                         <h2 class="text-center font-bold">12.90$ - 18.85$</h2>
                         <p class="text-center">Apples</p>
 
-                        <div class="rating rating-md rating-half flex justify-center">
+                        <div class="rating rating-md rating-half flex justify-center" id="s1">
                             <input type="radio" name="rating-10" class="rating-hidden" />
                             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
                             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
@@ -298,12 +301,12 @@
                     </div>
                 </div>
                 <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="/./images/fruit7.png" alt="Shoes" /></figure>
+                    <figure><img src="/./images/fruit7.png" alt="Shoes2" /></figure>
                     <div class="card-body">
                         <h2 class="text-center font-bold">12.90$ - 18.85$</h2>
                         <p class="text-center">Orange</p>
 
-                        <div class="rating rating-md rating-half flex justify-center">
+                        <div class="rating rating-md rating-half flex justify-center" id="s2">
                             <input type="radio" name="rating-10" class="rating-hidden" />
                             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
                             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
@@ -365,12 +368,12 @@
                     </div>
                 </div>
                 <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="/./images/fruit8.png" alt="Shoes" /></figure>
+                    <figure><img src="/./images/fruit8.png" alt="Shoes3" /></figure>
                     <div class="card-body">
                         <h2 class="text-center font-bold">12.90$ - 18.85$</h2>
                         <p class="text-center">Red Dragon</p>
 
-                        <div class="rating rating-md rating-half flex justify-center">
+                        <div class="rating rating-md rating-half flex justify-center" id="s3">
                             <input type="radio" name="rating-10" class="rating-hidden" />
                             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
                             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
@@ -432,12 +435,12 @@
                     </div>
                 </div>
                 <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="/./images/fruit9.png" alt="Shoes" /></figure>
+                    <figure><img src="/./images/fruit9.png" alt="Shoes4" /></figure>
                     <div class="card-body">
                         <h2 class="text-center font-bold">12.90$ - 18.85$</h2>
                         <p class="text-center">Banana</p>
 
-                        <div class="rating rating-md rating-half flex justify-center">
+                        <div class="rating rating-md rating-half flex justify-center" id="s4">
                             <input type="radio" name="rating-10" class="rating-hidden" />
                             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
                             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
@@ -495,6 +498,78 @@
 
                                 </form>
                             </dialog>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full mt-10 flex justify-center">
+                <button class="btn bg-[#F85559] text-white">Shop All</button>
+            </div>
+        </section>
+        <section class="w-full mt-32">
+            <div class="w-full h-auto md:h-[700px]"
+                style="background-image: url('./images/team.png'),linear-gradient(90deg,#000,#00000018); background-blend-mode: overlay;">
+                <div class="text-center text-white space-y-3 pt-48">
+                    <h2 class="text-3xl font-bold">Meet the team section</h2>
+                    <p class="text-xs">Contrary to popular belief, is not simply random text. It has roots in a piece of
+                        classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="grid mt-16 md:grid-cols-2 lg:grid-cols-4">
+                    <!-- grid_01 -->
+                    <div>
+                        <div class="card text-white">
+                            <figure><img src="./images/member1.png" alt="Shoes" /></figure>
+                            <div class="card-body">
+                                <h2 class="text-center">Awlad Hossain</h2>
+                                <p class="text-center">Fruits Expert</p>
+                                <div class="w-full flex justify-center items-center gap-5">
+                                    <i class="fa-brands fa-facebook bg-[#F85559] text-white rounded-full"></i>
+                                    <i class="fa-brands fa-twitter bg-[#F85559] text-white rounded-full"></i>
+                                    <i class="fa-brands fa-linkedin bg-[#F85559] text-white rounded-full"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card text-white">
+                            <figure><img src="./images/member2.png" alt="Shoes" /></figure>
+                            <div class="card-body">
+                                <h2 class="text-center">Safia Chowdhury</h2>
+                                <p class="text-center">Fruits Expert</p>
+                                <div class="w-full flex justify-center items-center gap-5">
+                                    <i class="fa-brands fa-facebook bg-[#F85559] text-white rounded-full"></i>
+                                    <i class="fa-brands fa-twitter bg-[#F85559] text-white rounded-full"></i>
+                                    <i class="fa-brands fa-linkedin bg-[#F85559] text-white rounded-full"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card text-white">
+                            <figure><img src="./images/member3.png" alt="Shoes" /></figure>
+                            <div class="card-body">
+                                <h2 class="text-center">Rokib Hossain</h2>
+                                <p class="text-center">Fruits Expert</p>
+                                <div class="w-full flex justify-center items-center gap-5">
+                                    <i class="fa-brands fa-facebook bg-[#F85559] text-white rounded-full"></i>
+                                    <i class="fa-brands fa-twitter bg-[#F85559] text-white rounded-full"></i>
+                                    <i class="fa-brands fa-linkedin bg-[#F85559] text-white rounded-full"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card text-white">
+                            <figure><img src="./images/member4.png" alt="Shoes" /></figure>
+                            <div class="card-body">
+                                <h2 class="text-center">Chaity</h2>
+                                <p class="text-center">Fruits Expert</p>
+                                <div class="w-full flex justify-center items-center gap-5">
+                                    <i class="fa-brands fa-facebook bg-[#F85559] text-white rounded-full"></i>
+                                    <i class="fa-brands fa-twitter bg-[#F85559] text-white rounded-full"></i>
+                                    <i class="fa-brands fa-linkedin bg-[#F85559] text-white rounded-full"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
